@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiramisu d'Exception | Cheffe Kawthar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">K.</div>
+            <ul>
+                <li><a href="#concept">Le Concept</a></li>
+                <li><a href="#commande">Commander</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>L'Art du Tiramisu</h1>
+            <p>Par la Cheffe <span>Kawthar</span></p>
+            <a href="#commande" class="btn">Réserver une création</a>
+        </div>
+    </section>
+
+    <section id="concept" class="about">
+        <h2>Une Signature Unique</h2>
+        <p>Chaque couche est une promesse de douceur, préparée avec les meilleurs cafés et un mascarpone d'exception.</p>
+    </section>
+
+    <section id="commande" class="order-section">
+        <div class="form-container">
+            <h2>Expérience de Commande</h2>
+            <p>Laissez vos coordonnées pour une dégustation sur mesure.</p>
+            <form id="orderForm">
+                <input type="text" id="name" placeholder="Nom Complet" required>
+                <input type="email" id="email" placeholder="Adresse Email" required>
+                <select id="flavor">
+                    <option value="classico">Le Classico (Café Intense)</option>
+                    <option value="pistache">Pistache de Sicile</option>
+                    <option value="speculoos">Éclats de Spéculoos</option>
+                </select>
+                <textarea id="note" placeholder="Demandes particulières (Allergies, événement...)"></textarea>
+                <button type="submit">Confirmer la demande</button>
+            </form>
+            <div id="confirmation" class="hidden">Merci, votre demande est entre les mains de la Cheffe Kawthar.</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
